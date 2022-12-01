@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eval</title>
+    <style>
+        .container{
+            border: 3px solid transparent;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .content>h1{
+            border: 3px solid transparent;
+            width: 40%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            color: #19304b;
+
+        }
+        .content>p{
+            border: 3px solid transparent;
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+            color:#999999;
+
+        }
+        .cards{
+            border: 3px solid transparent;
+            width: 80%;
+            height: 350px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 350px 350px 350px;
+            grid-gap: 20px;
+            
+
+        }
+        .cards>div{
+            border: 3px solid transparent;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            
+        }
+        .cards>div>h2{
+            color: #1a2c4d;
+        }
+        .cards>div>.free{
+            color: #09ab78;
+        }
+        .cards>div>p>i{
+            color: #cfcfd0;
+        }
+        .cards>div>.text{
+            color: #959798;
+            padding: 5px;
+        }
+        button{
+            width: 159px;
+            height: 50px;
+            margin: 10px 0px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border-color: #007aff;
+            background-color: #ffffff;
+            color: #007aff;
+            font-weight:bold;
+            font-size: 13px;
+        }
+        .paid1{
+            color: #f27e42;
+        }
+        .paid2{
+            color: #4294f2
+        }
+        .primary{
+            background-color: #007aff;
+            color: white;
+            border: none;
+        }
+        @media screen and (min-width:450px) and (max-width:920px){
+            .container{
+                border: 3px solid transparent;
+                width: 70%;
+                height: auto;
+            }
+            .content>h1{
+                border: 3px solid transparent;
+                width: 100%;
+                text-align: center;
+                color: #19304b;
+                font-size:25px ;
+    
+            }
+            .content>p{
+                border: 3px solid transparent;
+                width: 80%;
+                padding: 10px 0px;
+                margin: auto;
+                margin-top: 10px;
+                color:#999999;
+    
+            }
+            .cards{
+                border: 3px solid transparent;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-gap: 20px;
+                
+    
+            }
+            
+        }
+
+        @media screen and (min-width:0px) and (max-width:450px) {
+            .container{
+                border: 3px solid transparent;
+                width: 80%;
+                height: auto;
+            }
+            .content>h1{
+                border: 3px solid transparent;
+                width: 100%;
+                text-align: center;
+                color: #19304b;
+                font-size:25px ;
+    
+            }
+            .content>p{
+                border: 3px solid transparent;
+                width: 100%;
+                padding: 10px 0px;
+                margin: auto;
+                margin-top: 10px;
+                color:#999999;
+    
+            }
+            .cards{
+                border: 3px solid transparent;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(3,1fr);
+                grid-gap: 20px;
+                
+    
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Choose a plan that right for your business</h1>
+            <p>Sit laborum, delectus reiciendis accusantium praesentium cum ratione possimus placeat consectetur. Facilis odio optio earum vero quisquam.</p>
+
+        </div>
+        <div class="cards">
+            <div>
+                <h2> Starter Plan </h2>
+                <h1 class="free">Free</h1>
+                <p><i>Per month</i></p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis minima quo dignissimos accusamus temporibus!</p>
+                <button>StartNow</button>
+            </div>
+            <div>
+                <h2> Business Plan </h2>
+                <h1 class="paid1">$39.00</h1>
+                <p><i>Per month</i></p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis minima quo dignissimos accusamus temporibus!</p>
+                <button class="primary">StartNow</button>
+            </div>
+            <div>
+                <h2> Premium Plan </h2>
+                <h1 class="paid2">$59.00</h1>
+                <p><i>Per month</i></p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis minima quo dignissimos accusamus temporibus!</p>
+                <button>StartNow</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

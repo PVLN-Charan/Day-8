@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        .container-grid{
+            border: 3px solid transparent;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows:100px 350px;
+            grid-template-areas: 
+            "n n n n n n n n n n n n"
+            "b1 b1 b1 b2 b2 b2 b3 b3 b3 b4 b4 b4";
+            grid-gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px;
+
+           
+        }
+        .nav{
+            background-color: #f7ff00;
+            font-size: 50px;
+            padding: 10px;
+            display: grid;
+            grid-area: n;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .box1{
+            background-color: #ff0000;
+            font-size: 30px;
+            padding: 10px;
+            display: grid;
+            grid-area: b1;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        .box2{
+            background-color: #00ff2a;
+            font-size: 30px;
+            padding: 10px;
+            display: grid;
+            grid-area: b2;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .box3{
+            background-color: #5763ee;
+            font-size: 30px;
+            padding: 10px;
+            display: grid;
+            grid-area: b3;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .box4{
+            background-color: #989898;
+            font-size: 30px;
+            padding: 10px;
+            display: grid;
+            grid-area: b4;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        @media only screen and (min-width:450px) and (max-width:920px){
+            .container-grid{
+                border: 3px solid transparent;
+                width: 70%;
+                height: auto;
+                margin: auto;
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: repeat(12,1fr);
+                grid-template-rows:repeat(3,320px);
+                grid-template-areas: 
+                "n n n n n n n n n n n n"
+                "b1 b1 b1 b1 b1 b1 b3 b3 b3 b3 b3 b3 "
+                "b2 b2 b2 b2 b2 b2 b4 b4 b4 b4 b4 b4";
+                grid-gap: 20px;
+    
+               
+            }
+            .nav{
+                background-color: #f7ff00;
+                font-size: 50px;
+                padding: 10px;
+                display: grid;
+                grid-area: n;
+            }
+            .box1{
+                background-color: #ff0000;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b1;
+                
+            }
+            .box2{
+                background-color: #00ff2a;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b2;
+            }
+            .box3{
+                background-color: #5763ee;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b3;
+            }
+            .box4{
+                background-color: #989898;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b4;
+            }
+
+        }
+        @media only screen and (min-width:0px) and (max-width:450px){
+            .container-grid{
+                border: 3px solid transparent;
+                width: 70%;
+                height: auto;
+                margin: auto;
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(12,1fr);
+                grid-template-rows:repeat(5,120px);
+                grid-template-areas: 
+                "n n n n n n n n n n n n"
+                "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 "
+                "b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4"
+                "b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2"
+                "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 "
+                ;
+                grid-gap: 20px;
+    
+               
+            }
+            .nav{
+                background-color: #f7ff00;
+                font-size: 50px;
+                padding: 10px;
+                display: grid;
+                grid-area: n;
+            }
+            .box1{
+                background-color: #ff0000;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b1;
+                
+            }
+            .box2{
+                background-color: #00ff2a;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b2;
+            }
+            .box3{
+                background-color: #5763ee;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b3;
+            }
+            .box4{
+                background-color: #989898;
+                font-size: 30px;
+                padding: 10px;
+                display: grid;
+                grid-area: b4;
+            }
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="nav">Navigation</div>
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+        <div class="box4">Box 4</div>
+    </div>
+</body>
+</html>
